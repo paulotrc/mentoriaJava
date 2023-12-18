@@ -1,0 +1,21 @@
+Mentoria - Java / Kotlin
+
+1 - Instalação e configuração de JDK
+2 - Informações sobre o Path do Sistema Operacional
+3 - Idealização de Projeto Draw.io
+4 - Instalação e configuração de Ferramentas
+4.1 - Instalação de IntelliJ
+4.2 - Instalação e Configuração de Maven
+4.3 - Instalação e Configuração de Gradle
+4.4 - Instalação e Configuração do GIT
+5 - Criação de Repositórios Github
+6 - Criação de Projeto Rest com Java - TDD
+7 - Criação de Projeto Rest com Kotlin - TDD
+8 - Instalação de +Ferramentas
+8.1 - Docker
+8.2 - Redis
+8.3 - Mongo
+8.4 - Postgres
+8.5 - Minikube
+
+
