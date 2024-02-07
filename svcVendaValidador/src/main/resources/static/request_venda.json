@@ -1,0 +1,13 @@
+{
+	id: "431b88dd-492b-43a2-af1e-8984d7ff6592",
+	cod_produto:10,
+	desc_produto:"Celular",
+	valor_produto:5000.00,
+	cliente:{
+		id:"2c0b97a9-5065-4917-ab53-db62baf6a2df",
+		nome:"Sebastião Vilarino Souza",
+		celular:998875241
+		ddd_celular:15
+		cpf_cnpj:"47551966048"
+	}	
+}
