@@ -24,6 +24,14 @@ public class RedisDataSourceTest {
     }
 
     @Test
+    @DisplayName("Deve incluir um request com sucesso")
+    void deveIncluirComSucessoUmRequest() throws Exception {
+        RequestVenda requestVenda = DataMock.getRequestVenda();
+        redisDataSource.incluiRequest(requestVenda);
+        Assertions.assertEquals(true, true);
+    }
+
+    @Test
     @DisplayName("Deve efetuar uma consulta com sucesso de um request")
     void deveConsultarComSucessoUmIdDeRequest() throws Exception {
         RequestVenda requestVenda = DataMock.getRequestVenda();
