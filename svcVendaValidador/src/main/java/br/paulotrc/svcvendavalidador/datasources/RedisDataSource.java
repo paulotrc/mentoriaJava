@@ -21,6 +21,11 @@ public class RedisDataSource {
         return !jedis.get(requestVenda.id().toString()).isEmpty();
     }
 
+    public String consultaDadosRequest(RequestVenda requestVenda) {
+        Jedis jedis = redisPoolComponent.getRedis();
+        return jedis.get(requestVenda.id().toString()).toString();
+    }
+
     public void incluiRequest(RequestVenda requestVenda) throws JsonProcessingException {
         redisPoolComponent.getRedis().set(requestVenda.id().toString(), JsonUtil.classToJsonString(requestVenda));
     }

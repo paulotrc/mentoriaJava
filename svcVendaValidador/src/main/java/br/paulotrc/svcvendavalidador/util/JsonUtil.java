@@ -1,19 +1,17 @@
 package br.paulotrc.svcvendavalidador.util;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class JsonUtil<T> {
 
-
-    private static final ObjectMapper mapper = new ObjectMapper();
-    public final Class<T> jsonStringToClass(String json, T ref) throws JsonProcessingException {
-        return mapper.readValue(json, (JavaType) ref);
-    }
-
     public static String classToJsonString(Object classe) throws JsonProcessingException {
+        ObjectMapper mapper = new ObjectMapper();
         return mapper.writeValueAsString(classe);
     }
 
+    public final Object jsonStringToClass(String json, Class<T> ref) throws JsonProcessingException {
+        ObjectMapper mapper = new ObjectMapper();
+        return mapper.readValue(json, ref);
+    }
 }
